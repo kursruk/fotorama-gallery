@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="COM_FOTOMOTO_GALLERY_TITLE_FORM_VIEW_GALLERY" option="View">
+        <message>
+                        <![CDATA[COM_FOTOMOTO_GALLERY_TITLE_FORM_VIEW_GALLERY_DESC]]>
+        </message>
+    </layout>
+    <fields name="params">
+        <fieldset name="basic" label="COM_FOTOMOTO_GALLERY">
+            <field name="categories" query="select id as value, path as categories from #__categories where id &gt; 9 order by id" type="sql" label="COM_FOTOMOTO_GALLERY_FORM_LBL_CATEGORIES" description="COM_FOTOMOTO_GALLERY_FORM_DESC_CATEGORIES" hint="COM_FOTOMOTO_GALLERY_FORM_LBL_CATEGORIES" />
+            <field name="fotomotodescription" 
+            type="editor"
+            filter="JComponentHelper::filterText"
+            default="" label="COM_FOTOMOTO_GALLERY_FORM_LBL_DESCRIPTION" description=""  />
+        </fieldset>
+    </fields>
+</metadata>

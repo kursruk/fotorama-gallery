@@ -3,10 +3,10 @@ window.addEventListener("load", function(){
     
     if ($('.w-is-edit').length==0)
     {
-        $('.img-tumbnail a').click(function(e){
-            let im = $(e.target);
-            if (im.tagName!=='A') im = im.parents('a:first').find('img');            
-            let img =  window.location.origin+'/'+im.attr('data-src');            
+        $('.thumbnail').click(function(e) {            
+            let im = $( $(e.target).parents('.thumbnail:first').find('img') );            
+            let img =  window.location.origin+'/'+im.attr('data-src'); 
+            // console.log(img);           
             if (undefined!==window.FOTOMOTO_ERROR)  alert('Fotomoto error: '+FOTOMOTO_ERROR.msg);
             else FOTOMOTO.API.showWindow(FOTOMOTO.API.PRINT, img);
         })

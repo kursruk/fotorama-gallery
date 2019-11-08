@@ -57,7 +57,7 @@ if ($canEdit)
     foreach ($this->items as $img)
     {  	?>			
 				<div class="img-tumbnail"> 
-					<a href="javascript:" class="thumbnail">
+					<div class="thumbnail">
 						<?php							
 							if ($img->src!=='')
 							{					
@@ -68,7 +68,7 @@ if ($canEdit)
 	
 							}
 						?>
-					</a>
+					</div>
 				</div>
 			<?php
     }

@@ -1,7 +1,9 @@
-.img-tumbnail a { 
-    float:left; padding: 3px; background-color: white; margin:3px; 
+.thumbnail { 
+    float:left; 
+    background-color:
+     white; margin:3px; 
     text-decoration: none;
-    min-height: 230px; 
+    min-height: 238px; 
 } 
 
 div.img-listbox {
@@ -11,7 +13,7 @@ div.img-listbox {
 
 div.img-tumbnail {
     text-align: center;
-    display: inline-block;
+    display: inline-block;    
     width: 306px;    
     vertical-align:top;
     padding-bottom: 4px;

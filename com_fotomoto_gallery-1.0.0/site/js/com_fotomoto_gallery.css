@@ -1,8 +1,9 @@
 .thumbnail { 
     float:left; 
     background-color:
-    white; margin:3px; 
+     white; margin:3px; 
     text-decoration: none;
+    padding: 2px;
     min-height: 238px; 
 } 
 
@@ -16,7 +17,7 @@ div.img-tumbnail {
     display: inline-block;    
     width: 306px;    
     vertical-align:top;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     cursor: pointer;
 }
 

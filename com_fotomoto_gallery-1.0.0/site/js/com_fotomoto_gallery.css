@@ -32,4 +32,10 @@ div.img-tumbnail {
     padding-left: 96px;
 }
 
+div.w-title {
+    position: relative;
+    top: -35pt;
+    color: white;
+    height: 0;
+}
 

@@ -65,7 +65,7 @@ class Fotomoto_galleryViewGalleryform extends \Joomla\CMS\MVC\View\HtmlView
 		parent::display($tpl);
 	}
 
-	function retResizedImage($imagePath, $new_width=300)
+	function retResizedImage($imagePath, $new_width=450)
 	{   $fileName = pathinfo($imagePath, PATHINFO_FILENAME);
 		$fullPath = pathinfo($imagePath, PATHINFO_DIRNAME) . "/" . $fileName . "_w${new_width}.jpg";
 
@@ -161,13 +161,13 @@ class Fotomoto_galleryViewGalleryform extends \Joomla\CMS\MVC\View\HtmlView
 		else throw new Exception('Set Fotomoto URL in the component settings',122);
 
 		$base_path = substr(JPATH_COMPONENT, strlen(JPATH_BASE));
-		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v5");
+		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v8");
 
 		$category = $this->params->get('categories');
 		if (trim($category=='')) 
 		throw new Exception('Set Fotomoto categorie in the component settings',126);
 
-		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v5");
+		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v8");
 
 		$db = JFactory::getDbo();
 

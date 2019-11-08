@@ -3,7 +3,7 @@
     background-color:
      white; margin:3px; 
     text-decoration: none;
-    padding: 2px;
+    padding: 2px !important;
     min-height: 238px; 
 } 
 
@@ -15,7 +15,7 @@ div.img-listbox {
 div.img-tumbnail {
     text-align: center;
     display: inline-block;    
-    width: 306px;    
+    width: 456px;    
     vertical-align:top;
     padding-bottom: 4px;
     cursor: pointer;

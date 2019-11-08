@@ -161,13 +161,13 @@ class Fotomoto_galleryViewGalleryform extends \Joomla\CMS\MVC\View\HtmlView
 		else throw new Exception('Set Fotomoto URL in the component settings',122);
 
 		$base_path = substr(JPATH_COMPONENT, strlen(JPATH_BASE));
-		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v4");
+		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v5");
 
 		$category = $this->params->get('categories');
 		if (trim($category=='')) 
 		throw new Exception('Set Fotomoto categorie in the component settings',126);
 
-		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v4");
+		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v5");
 
 		$db = JFactory::getDbo();
 

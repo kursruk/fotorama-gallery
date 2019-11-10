@@ -8,6 +8,8 @@
     <fields name="params">
         <fieldset name="basic" label="COM_FOTOMOTO_GALLERY">
             <field name="categories" query="select id as value, path as categories from #__categories where id &gt; 9 order by id" type="sql" label="COM_FOTOMOTO_GALLERY_FORM_LBL_CATEGORIES" description="COM_FOTOMOTO_GALLERY_FORM_DESC_CATEGORIES" hint="COM_FOTOMOTO_GALLERY_FORM_LBL_CATEGORIES" />
+            <field name="fotomotoimagewidth" type="number" default="450" 
+                 label="COM_FOTOMOTO_GALLERY_FORM_WIDTH_DESCRIPTION" />
             <field name="fotomotodescription" 
             type="editor"
             filter="JComponentHelper::filterText"

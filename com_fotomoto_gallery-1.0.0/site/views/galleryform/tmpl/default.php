@@ -35,6 +35,13 @@ $canEdit = Fotomoto_galleryHelpersFotomoto_gallery::canUserEdit($this->item, $us
 */
 
 // $heading = $this->params->get('show_page_heading',1);
+?>
+<style type="text/css">
+div.img-tumbnail {
+    width: <?=($this->params->get('fotomotoimagewidth')+6)?>px;
+}
+</style>
+<?php
 echo  '<h1 class="item_title">'.JFactory::getApplication()->getMenu()->getActive()->title.'</h1>';
 echo  '<div class="item_title">'.$this->params->get('fotomotodescription').'</div>';
 

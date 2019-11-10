@@ -161,13 +161,13 @@ class Fotomoto_galleryViewGalleryform extends \Joomla\CMS\MVC\View\HtmlView
 		else throw new Exception('Set Fotomoto URL in the component settings',122);
 
 		$base_path = substr(JPATH_COMPONENT, strlen(JPATH_BASE));
-		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v8");
+		$this->document->addScript("$base_path/js/com_fotomoto_gallery.js?v11");
 
 		$category = $this->params->get('categories');
 		if (trim($category=='')) 
 		throw new Exception('Set Fotomoto categorie in the component settings',126);
 
-		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v8");
+		$this->document->addStyleSheet("$base_path/js/com_fotomoto_gallery.css?v11");
 
 		$db = JFactory::getDbo();
 
@@ -195,7 +195,7 @@ class Fotomoto_galleryViewGalleryform extends \Joomla\CMS\MVC\View\HtmlView
 			if ($imf=='') $imf = $im->image_fulltext;
 			if ($imf!=='')
 			{	$img->src = $imf;
-				$img->resized = $this->retResizedImage($imf);
+				$img->resized = $this->retResizedImage($imf, $this->params->get('fotomotoimagewidth') );
 				$img->height = getimagesize($img->resized)[1];
 			}
 		}
